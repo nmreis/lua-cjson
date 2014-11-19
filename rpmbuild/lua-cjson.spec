@@ -1,4 +1,4 @@
-%define luaver 5.1
+%define luaver 5.2
 %define lualibdir %{_libdir}/lua/%{luaver}
 %define luadatadir %{_datadir}/lua/%{luaver}
 
@@ -13,8 +13,8 @@ URL:		http://www.kyne.com.au/~mark/software/lua-cjson/
 Source0:	http://www.kyne.com.au/~mark/software/lua-cjson/download/lua-cjson-%{version}.tar.gz
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
-BuildRequires:	lua >= %{luaver}, lua-devel >= %{luaver}
-Requires:	lua >= %{luaver}
+BuildRequires:	lua52 >= %{luaver}, lua52-devel >= %{luaver}
+Requires:	lua52 >= %{luaver}
 
 %description
 The Lua CJSON module provides JSON support for Lua. It features:
